@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import CombinedChart from "./ConbinedChart";
 import sample_data from "../app/sample_data.json";
 
