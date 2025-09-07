@@ -27,6 +27,8 @@ ChartJS.register(
   LineController
 );
 
+import { Chart } from "react-chartjs-2";
+
 
 const CombinedChart = ({ data }) => {
   const labels = data.map(item => item.Date.split(" ")[0]); // X-axis: date
