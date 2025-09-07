@@ -4,25 +4,29 @@ import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
+  BarElement,
   PointElement,
   LineElement,
-  BarElement,
   Title,
   Tooltip,
   Legend,
+  BarController,
+  LineController,
 } from "chart.js";
-import { Chart } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
+  BarElement,
   PointElement,
   LineElement,
-  BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  BarController,
+  LineController
 );
+
 
 const CombinedChart = ({ data }) => {
   const labels = data.map(item => item.Date.split(" ")[0]); // X-axis: date
